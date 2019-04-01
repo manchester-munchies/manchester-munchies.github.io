@@ -73,7 +73,28 @@
 						<h2>Comments</h2>
 						<p>Do you agree with best Manchester eats? Leave a comment below...</p>
 						<ul class="actions">
-							<li><a href="#" class="button big">Comment</a></li>
+							<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+        <script>
+    function submitters(){
+    event.preventDefault();
+
+        $.post( "mail.php.txt", $( "#form1" ).serialize(),function( data ) {
+$("#formcontainer").fadeOut("slow");
+$("#formcontainer").html(data);
+    } );
+    }
+        </script>
+        </head>
+        <body>
+        <div id="formcontainer">
+        <form id="form1" name="form1" method="post" action="send_mail.php">
+            <label>
+            <textarea name="input" id="input" cols="45" rows="5"></textarea>
+            </label>
+            <input Onclick="submitters()" type="button" name="export" id="export" value="Submit" />
+			  </form>
+    </div>
 						</ul>
 					</section>
 
