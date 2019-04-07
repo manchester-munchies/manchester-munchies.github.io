@@ -75,25 +75,18 @@
 						<ul class="actions">
 							<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
-        <script>
-    function submitters(){
-    event.preventDefault();
 
-        $.post( "mail.php.txt", $( "#form1" ).serialize(),function( data ) {
-$("#formcontainer").fadeOut("slow");
-$("#formcontainer").html(data);
-    } );
-    }
-        </script>
         </head>
         <body>
         <div id="formcontainer">
-        <form id="form1" name="form1" method="post" action="send_mail.php">
-            <label>
-            <textarea name="input" id="input" cols="45" rows="5"></textarea>
-            </label>
-            <input Onclick="submitters()" type="button" name="export" id="export" value="Submit" />
-			  </form>
+				<form accept-charset="UTF-8" action="https://www.formbackend.com/f/d5290805297abfdb" method="POST" target="_blank" class="container">
+    			<label>
+			  		<textarea name="input" id="input" cols="45" rows="5"></textarea>
+					</label>
+    
+
+    <button type="submit">Submit</button>
+  </form>
     </div>
 						</ul>
 					</section>
@@ -104,8 +97,7 @@ $("#formcontainer").html(data);
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+
 						</ul>
 					</footer>
 
@@ -116,6 +108,7 @@ $("#formcontainer").html(data);
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
