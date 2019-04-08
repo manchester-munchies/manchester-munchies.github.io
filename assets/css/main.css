@@ -1582,3 +1582,14 @@
   width: device-width ;
   zoom: 1.0 ;
 }
+}
+
+img {
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 50px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
