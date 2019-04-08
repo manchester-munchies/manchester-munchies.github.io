@@ -1561,11 +1561,13 @@
 			font-size: 0.8em;
 		}
 
-		#footer {
+		@media screen and (max-width: 736px) {
+
+			#footer {
 				margin-top: 2em;
 			}
 
-		#footer:before {
+				#footer:before {
 					margin-bottom: 2em;
 				}
 
@@ -1579,4 +1581,15 @@
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
+}
+}
+
+img {
+    position: relative;
+    float: left;
+    width:  100px;
+    height: 50px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
