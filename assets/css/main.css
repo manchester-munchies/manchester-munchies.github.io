@@ -1561,11 +1561,13 @@
 			font-size: 0.8em;
 		}
 
-		#footer {
+		@media screen and (max-width: 736px) {
+
+			#footer {
 				margin-top: 2em;
 			}
 
-		#footer:before {
+				#footer:before {
 					margin-bottom: 2em;
 				}
 
